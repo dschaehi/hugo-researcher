@@ -77,18 +77,9 @@ $y-medium: 1.0rem;
         height: $avatar-size;
         width: $avatar-size;
     }
-    ol {
-        counter-reset: list;
-        list-style: none;
-        padding-left: 0;
-        & > li:before {
-            content: "[" counter(list, decimal) "] ";
-            counter-increment: list;
-        }
-    }
     ul {
-        list-style: inside;
-        padding-left: 0;
+        list-style-position: outside;
+        padding-left: 2.5em;
     }
     table {
         margin: $y-medium auto;

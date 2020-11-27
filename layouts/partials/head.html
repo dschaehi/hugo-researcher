@@ -16,11 +16,24 @@
         <link rel="icon" type="image/ico" href="{{ . | absURL }}">
     {{ end }}
 
-    {{ with .OutputFormats.Get "rss" -}}
-        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-    {{ end -}}
-
     {{ if not .Site.IsServer }}
         {{ template "_internal/google_analytics.html" . }}
+    {{ end }}
+
+    <!-- Google Fonts -->
+    {{ if $.Site.Params.googlefonts.font }}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ $.Site.Params.googlefonts.font }}">
+
+    <style>
+	    body {
+		    font-family: '{{ $.Site.Params.googlefonts.font }}',
+		    sans-serif;
+	    }
+	    * {
+		color: $black;
+		font-family: '{{ $.Site.Params.googlefonts.font }}';
+		line-height: 1.2;
+	    }		
+    </style>
     {{ end }}
 </head>
