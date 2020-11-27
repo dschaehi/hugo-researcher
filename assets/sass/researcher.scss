@@ -5,25 +5,42 @@ $y-small: 0.6rem;
 $y-medium: 1.0rem;
 
 // Placeholders
-%link-default {
-    color: $red;
+// %link-default {
+//     color: $red;
+//     text-decoration: none;
+//     & * {
+//         color: $red;
+//     }
+//     &:hover {
+//         color: $red;
+//         text-decoration: underline;
+//     }
+// }
+%link-default
+{
+    color: #586e75;
+    border-bottom: dotted 1px #586e75;
     text-decoration: none;
-    & * {
-        color: $red;
+    &:hover
+    {
+	background-color: #eee8d5;
+	color: #586e75;
     }
-    &:hover {
-        color: $red;
-        text-decoration: underline;
-    }
+    
 }
+
+body {
+    background-color: #fdf6e3;
+}
+
 %link-dark {
-    color: $black;
+    color: #586e75;
     text-decoration: none;
     & * {
-        color: $black;
+        color: #586e75;
     }
     &:hover {
-        color: $black;
+        color: #586e75;
         text-decoration: underline;
     }
 }
@@ -35,8 +52,7 @@ $y-medium: 1.0rem;
 
 // Style
 * {
-    color: $black;
-    font-family: "Inconsolata";
+    color: #586e75;
     line-height: 1.2;
 }
 .container {
@@ -44,10 +60,12 @@ $y-medium: 1.0rem;
 }
 .navbar-brand {
     @extend %link-dark;
+    color: #586e75;
     font-size: 2rem;
 }
 .nav-link {
     @extend %link-default;
+    border-bottom-style: none;
 }
 #content {
     a {
@@ -57,6 +75,7 @@ $y-medium: 1.0rem;
         margin-bottom: $y-small;
     }
     h1, h2, h3, h4, h5, h6 {
+	color: #586e75;
         font-size: medium;
         font-weight: bold;
         margin: $y-medium 0 $y-small 0;
@@ -96,7 +115,7 @@ $y-medium: 1.0rem;
             @extend %table-cell;
         }
         & tr:nth-child(2n) {
-            background-color: #f8f8f8;
+            background-color: #eee8d5;
         }
     }
     blockquote {
