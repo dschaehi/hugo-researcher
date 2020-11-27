@@ -77,9 +77,13 @@ $y-medium: 1.0rem;
         height: $avatar-size;
         width: $avatar-size;
     }
+    ol {
+	padding-left: 2em;
+    }
     ul {
         list-style-position: outside;
-        padding-left: 2.5em;
+	list-style-type: circle;
+        padding-left: 1em;
     }
     table {
         margin: $y-medium auto;
