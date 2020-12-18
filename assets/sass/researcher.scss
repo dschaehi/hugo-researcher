@@ -69,26 +69,27 @@ body {
 }
 
 #content #title {
+    font-size: 30px;
     font-weight: bold;
 }
 
 #content #date {
     text-align: right;
     font-weight: normal;
+    margin: 0px 10px 40px 0px;    
 }
 
 #content div.ox-hugo-toc {
     float: right;
     color: $black;
     background-color: #eee8d5;
-    border-radius: 20px;
-    padding: 10px 20px 0px 20px;
-    margin: 20px 0px 20px 20px;
+    border-radius: 10px;
+    padding: 10px 15px 0px 15px;
+    margin: 0px 0px 0px 20px;
 }
 #content .ox-hugo-toc .heading {
-    font-variant: small-caps;	
-    font-size: 1.4em;
-    font-weight: bold;
+    font-size: 1em;
+    // font-weight: bold;
     padding-bottom: 0.5em;
     text-align: left;
 }
@@ -99,6 +100,19 @@ body {
 }   
 
 #content {
+    blockquote {
+	text-align:left !important;
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+    }
+    article {
+	text-align:justify;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	line-height: 2.0;
+    }
     a {
         @extend %link-default;
     }
@@ -112,7 +126,8 @@ body {
         margin: $y-medium 0 $y-small 0;
     }
     @for $i from 1 through 4 {
-        h#{$i} {
+        h#{$i
+	  } {
             font-size: 1.2rem + 0.2 * (4 - $i);
         }
     }
@@ -129,11 +144,19 @@ body {
     }
     ol {
 	padding-left: 2em;
+	text-align:justify;
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
     }
     ul {
         list-style-position: outside;
 	list-style-type: circle;
         padding-left: 1em;
+	text-align:justify;
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
     }
     table {
         margin: $y-medium auto;
