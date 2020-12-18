@@ -67,6 +67,37 @@ body {
     @extend %link-default;
     border-bottom-style: none;
 }
+
+#content #title {
+    font-weight: bold;
+}
+
+#content #date {
+    text-align: right;
+    font-weight: normal;
+}
+
+#content div.ox-hugo-toc {
+    float: right;
+    color: $black;
+    background-color: #eee8d5;
+    border-radius: 20px;
+    padding: 10px 20px 0px 20px;
+    margin: 20px 0px 20px 20px;
+}
+#content .ox-hugo-toc .heading {
+    font-variant: small-caps;	
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    text-align: left;
+}
+#content .ox-hugo-toc ul {
+    list-style-position: outside;
+    list-style-type: none;
+    padding-left: 0em;
+}   
+
 #content {
     a {
         @extend %link-default;
@@ -141,6 +172,7 @@ body {
         }
     }
 }
+
 #footer {
     a {
         @extend %link-dark;
