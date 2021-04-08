@@ -107,7 +107,7 @@ body {
 	hyphens: none;
     }
     article {
-	text-align:justify;
+	text-align: left; 	// alternative: justify
 	-webkit-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
@@ -144,7 +144,7 @@ body {
     }
     ol {
 	padding-left: 2em;
-	text-align:justify;
+	text-align:left;
 	-webkit-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
@@ -153,7 +153,7 @@ body {
         list-style-position: outside;
 	list-style-type: disc;
         padding-left: 1em;
-	text-align:justify;
+	text-align:left;
 	-webkit-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
