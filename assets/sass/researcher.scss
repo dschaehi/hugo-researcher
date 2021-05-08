@@ -23,7 +23,7 @@ $y-medium: 1.0rem;
     text-decoration: none;
     &:hover
     {
-	background-color: #eee8d5;
+	background-color: #fefefe;
 	color: $black;
     }
     
@@ -82,7 +82,7 @@ body {
 #content div.ox-hugo-toc {
     float: right;
     color: $black;
-    background-color: #eee8d5;
+    background-color: #f0f0f0;
     border-radius: 10px;
     padding: 10px 15px 0px 15px;
     margin: 0px 0px 0px 20px;
@@ -169,7 +169,7 @@ body {
             @extend %table-cell;
         }
         & tr:nth-child(2n) {
-            background-color: #eee8d5;
+            background-color: #eeeeee;
         }
     }
     blockquote {
